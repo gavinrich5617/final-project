@@ -1,0 +1,128 @@
+@charset "utf-8";
+/*
+ CIS-137 Final Project Style Sheet
+ Author: Gavin Richardson
+
+ Filename: final_project.css
+ Includes the Styles for my Personal Website
+*/
+
+/*CSS Color Variable Styles*/
+ :root{
+   --light-gray: #d9e1e8;
+   --black: #282c37;
+   --blue: #2b90d9;
+   --gray: #9baec8;
+
+ }
+/*Body Styles */
+html, body{
+  font-family: 'Noto Sans', 'Slabo 27px', 'PT Serif';
+  font-size: default;
+  background-color: var(--gray);
+}
+
+/*Header Styles*/
+header {
+  border: #2b90d9;
+}
+header > p{
+  font: 'Noto Sans';
+  font-size: default;
+}
+@media (max-width: 768px) {
+  img {float: left;
+
+  }
+  p{
+
+  }
+
+}
+@media (min-width: 769px) and (max-width: 991px){
+  img {float: left;
+
+    }
+    p{
+
+    }
+
+}
+@media (min-width: 992px){
+  img {float:left;
+
+    }
+   p{ }
+}
+/*Image Styles */
+div#selfImg img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+div#selfImg::after{
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+div#firstImg{
+  content: "";
+  display: table;
+  clear: both;
+  margin: 20px;
+  padding: 10px;
+}
+div#secondImg{
+  content: "";
+  display: table;
+  clear: both;
+  margin: 20px;
+  padding: 10px;
+}
+div#thirdImg{
+  content: "";
+  display: table;
+  clear: both;
+  margin: 20px;
+  padding: 10px; 
+}
+
+/*Table Styles*/
+table.courses{
+  background-color: var(--light-gray);
+  border: 10px outset var(--black);
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+/*Cell Styles*/
+table.courses th, table.courses td{
+  border: 1px solid #282c36;
+}
+
+/*Caption Styles*/
+table.courses caption{
+    caption-side: bottom;
+    text-align: center;
+    font-size: 1em;
+}
+
+/*Row Styles*/
+table.courses thead tr{
+  height: 30px;
+  width: 5px;
+}
+
+/*Column Styles*/
+  col#firstCol{
+    width: 20%;
+    font: 'PT Serif';
+    font-size: 2em;
+  }
+
+  col.courseCols{
+    width: 20%;
+    font-size: 1em;
+  }
